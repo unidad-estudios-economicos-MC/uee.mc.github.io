@@ -126,3 +126,51 @@ a {
 a:hover {
     color: #0056b3;
 }
+
+/* ... Código anterior ... */
+
+/* Encabezado */
+header {
+    background-color: #007BCC; /* Azul menos encendido */
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+/* Menú */
+.menu-dropdown {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.menu-dropdown:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.sub-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.sub-menu li a:hover {
+    background-color: #f5f5f5;
+}
+
+/* ... Código posterior ... */
